@@ -1,0 +1,33 @@
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+jar {
+    baseName = 'DDPush'
+    version =  '1.0'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+}
+
+
+tasks.idea {
+    dependsOn = [cleanIdeaModule, ideaModule]
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.6'
+}
+
+
