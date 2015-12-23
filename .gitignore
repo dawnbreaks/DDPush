@@ -2,10 +2,10 @@
 *.war
 *.ear
 *.class
-/target
-.gradle
 *.log
-
+/.gradle
+/build
+/target
 
 .classpath
 .settings
